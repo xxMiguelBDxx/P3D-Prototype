@@ -1,0 +1,27 @@
+{% extends 'index_layout.html' %}
+<title>Sobre Mi</title>
+{% block body %}
+
+<div id="greeting" style="color:white;height:300px;margin-top:2px">
+    <div class="bg-image" style="background-image: url('/static/greeting.png');height:100%;position:relative;">
+        <div>
+            <h1 class="display-3" style="font-size:80px">Bienvenido.<br>Mi nombre es<br>Germán Borges.</h1>
+        </div>
+    </div>
+</div>
+
+
+<div style="background-color:rgb(30, 30, 30);height:455px">
+    <img src="/static/img1.png" align="left" height="100%" width="455px">
+     <a href="{{ url_for('sobre_mi') }}" style="text-decorations:none; color:inherit;">
+        <h1 class="display-3" style="color:white; font-size:160px;">Sobre<br>Mí</h1></a>
+
+</div>
+<div style="background-color:rgb(30, 30, 30);height:455px;margin-top:2px">
+    <img src="/static/img2.png" align="left" height="100%" width="455px">
+    <a href="{{ url_for('muestras') }}" style="text-decorations:none; color:inherit;">
+        <h1 class="display-3" style="color:white; font-size:160px;">Muestras</h1></a>
+
+</div>
+
+{% endblock %}

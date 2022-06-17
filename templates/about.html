@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+<title>Sobre Mi</title>
+{% block body %}
+<div class="bg-image" style="background-image: url('/static/background.png'); height: 90vh;">
+    <div style="margin-top:2px">
+        <img src="{{ url_for('static', filename='profile.png') }}" align="left"  height="244px" width="244px" alt="Perfil">
+        <div>
+            <div class="shadow shadow-primary shadow-intensity-xl" style="margin-top=10px;background-color:rgb(200, 200, 200)">
+                <h1>Sobre Mí</h1>
+                <ul style="color:black; font-size:25px; text-align:left;list-style:none;">
+                    <li>[Área de especialización]<br><br></li>
+                    <li>[Años de experiencia]<br><br></li>
+                    <li>[Número de proyectos realizados]<br></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h1>Biografía</h1>
+        <p style="font-size:30px">/////////////////////////////////////////////////////////////////<br>
+                    /////////////////////////////////////////<br>
+                /////////////////////////////////////////<br>
+                /////////////////////////////////////////<br>
+                /////////////////////////////////////////
+    </div>
+    </div>
+{% endblock %}
+

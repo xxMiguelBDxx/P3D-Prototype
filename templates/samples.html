@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+<title>Muestras</title>
+{% block body %}
+<div class="bg-image" style="background-image: url('/static/background.png'); height: 210vh;">
+<h1 style="font-size:60px;margin-top:2px">Baños</h1>  <!-- Baños -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='bathroom.jpg') }}"
+        height="350px"
+        width="350px"
+        margin-top="10px"
+        class="shadow-1-strong rounded mb-4"
+
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='bathroom.jpg') }}"
+        height="350px"
+        width="350px"
+        margin-top="10px"
+        class="shadow-1-strong rounded mb-4"
+
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='bathroom.jpg') }}"
+        height="350px"
+        width="350px"
+        margin-top="10px"
+        class="shadow-1-strong rounded mb-4"
+
+      />
+    </div>
+  </div>
+</div>
+
+
+<h1 style="font-size:60px">Salas de estar</h1> <!-- Salas de estar -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='living-room.jpg') }}"
+        height="350px"
+        width="350px"
+        class="shadow-1-strong rounded mb-4"
+
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='living-room.jpg') }}"
+        height="350px"
+        width="350px"
+        class="shadow-1-strong rounded mb-4"
+
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='living-room.jpg') }}"
+        height="350px"
+        width="350px"
+        class="shadow-1-strong rounded mb-4"
+      />
+    </div>
+  </div>
+</div>
+
+<h1 style="font-size:60px">Exteriores</h1>         <!-- Exteriores -->
+<div class="container" style="background color:black">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='outside.png') }}"
+        height="350px"
+        width="350px"
+        class="shadow-1-strong rounded mb-4"
+   }
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='outside.png') }}"
+        height="350px"
+        width="350px"
+        class="shadow-1-strong rounded mb-4"
+}
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{{ url_for('static', filename='outside.png') }}"
+        height="350px"
+        width="350px"
+        class="shadow-1-strong rounded mb-4"
+      />
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
